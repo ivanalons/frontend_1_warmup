@@ -1,0 +1,257 @@
+* {
+    margin:5;
+    padding:5;
+}
+
+/***************/
+/* HEADER DIVS */
+/***************/
+
+header {
+    display:flex;
+    height:auto;
+    justify-content:space-around;
+    align-items:center;
+    flex-flow: row nowrap;
+    border: 1px solid black;
+    padding-bottom:5px;
+}
+
+.title{
+    margin-left:100px;
+    flex : 7 1 auto;
+}
+
+.headerButtons{
+    flex : 1 1 auto;
+}
+
+button {
+    padding: 8px 40px;
+    margin: 0px 20px;
+}
+
+nav a{
+    text-decoration:none;
+    color:blue;
+    font-weight: bold;
+}
+
+/*******************/
+/* NAVIGATION DIVS */
+/*******************/
+
+.mainNavigation{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height:auto;
+    border: 1px solid black;
+}
+
+.menu{
+    flex: 3 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.navElement{
+    flex-basis: 20%;
+}
+
+.navElement a{
+    text-decoration:none;
+    color:black;
+    white-space: nowrap;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+.menu2{
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+
+}
+
+.menu2 select{
+    width: 150px;
+    height: 25px;
+}
+
+/*******************/
+/* SECTION    DIVS */
+/*******************/
+section{
+    border: 1px solid black;
+    height: auto;
+}
+
+.section1{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    /* background: green; */
+}
+
+.mainArticle{
+    flex-basis: 70%;
+    padding: 10px 10px;
+}
+
+.mainArticle img{
+    width:100%;
+}
+
+.mainAside{
+    flex-basis: 30%;
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-evenly;
+    align-items:center;
+    /* background: red; */
+    padding:10px 10px;
+}
+
+.aside1 img{
+    width:100%;
+}
+.aside2 img{
+    width:100%;
+}
+
+.article2{
+    display:flex;
+    flex-flow:row;
+    justify-content:space-evenly;
+    align-items:flex-start;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.article2 p{
+    padding: 0 0;
+    margin : 0 30px;
+    margin-bottom: 20px;
+    text-align: jusfity;
+}
+
+/**************************/
+/*       IMAGE TEXT       */
+/**************************/
+/* Container holding the image and the text */
+.imgContainer {
+    position: relative;
+    text-align: center;
+    color: blue;
+    font-weight: bold;
+  }
+
+  /* Bottom right text */
+.bottom-right {
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+    background: white;
+  }
+
+  /* .imgContainer img{
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .col1 img{
+    width: 100%;
+    object-fit: contain;
+  } */
+
+/**************************/
+/*       FOOTER           */
+/**************************/
+
+.footer{
+    display:flex;
+    flex-flow: row nowrap;
+    height: auto;
+    justify-content: space-between;
+    align-items:center;
+    padding:15px 100px;
+    border: 1px solid black;
+}
+
+.footer a{
+    color:blue;
+    text-decoration: underline;
+}
+
+.footer .f3 a{
+    padding:40px 40px;
+}
+
+/**************************/
+/*         MEDIA          */
+/**************************/
+
+@media all and (max-width:1200px){
+
+    .section1{
+        flex-direction:column;
+        flex-wrap:wrap;
+    }
+    .mainAside{
+        flex-direction:row;
+        flex-wrap:wrap;
+    }
+    .article2{
+        justify-content: center;
+        align-items: center;
+        flex-direction:column;
+        flex-wrap:wrap;
+    }
+}
+
+@media all and (max-width:850px){
+
+    .article2{
+        margin-left:20px;
+    }
+
+    .article2 img{
+        height:250px;
+    }
+
+}
+
+@media all and (max-width:800px){
+    .menu{
+        flex-direction : column;
+        justify-content: flex-start;
+    }
+    .menu .navElement{
+        flex: 1 1 0;
+    }
+
+    .imgContainer img{
+        width:100%;
+    }
+
+    .article2 img{
+        width:100%;
+    }
+
+}
+
+@media all and (max-width:600px){
+    .footer{
+        flex-direction:column;
+    }
+}

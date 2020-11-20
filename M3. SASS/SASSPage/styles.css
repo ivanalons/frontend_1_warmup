@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.main {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+  align-items: stretch;
+  min-height: 100vh; }
+  .main :hover {
+    opacity: 0.1; }
+  .main div {
+    width: 20%;
+    align-self: stretch;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .main div ::before {
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: white;
+      opacity: 0.1;
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-transform: skewY(67deg) scaleY(1) translate(0, 0);
+      transform: skewY(67deg) scaleY(1) translate(0, 0); }
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0);
+    opacity: 1; } }
+@keyframes slideInFromDown {
+  0% {
+    transform: translateY(100%); }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+@keyframes slideInFromUp {
+  0% {
+    transform: translateY(-100%); }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+.block1 {
+  background: #244F75;
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  animation: 1s ease-in-out 0s 1 slideInFromLeft forwards; }
+
+.block2 {
+  background: #60BFBF;
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  animation: 1s ease-in-out 0.1s 1 slideInFromDown forwards; }
+
+.block3 {
+  background: #8C4B7E;
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  animation: 1s ease-in-out 0.2s 1 slideInFromUp forwards; }
+
+.block4 {
+  background: #F8BB44;
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  animation: 1s ease-in-out 0.3s 1 slideInFromDown forwards; }
+
+.block5 {
+  background: #F24B4B;
+  font-family: 'Lato', sans-serif;
+  font-size: 50px;
+  color: white;
+  font-weight: bold;
+  opacity: 0;
+  animation: 1s ease-in-out 0.4s 1 slideInFromRight forwards; }
+
+/*# sourceMappingURL=styles.css.map */

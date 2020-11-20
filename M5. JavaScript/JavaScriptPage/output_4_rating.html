@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles_4_rating.css"> 
+</head>
+<body>
+    
+
+    <!-- <ion-icon name="heart"></ion-icon> 
+    <ion-icon name="heart-outline"></ion-icon> 
+    <ion-icon name="heart-sharp"></ion-icon> -->
+    
+    <div class="main" onclick="reset();">
+        <ion-icon id="h1" name="heart-outline" onmouseover="paintHearts(1);" onmouseout="cleanHearts();" onclick="fixHearts(1);" ></ion-icon> 
+        <ion-icon id="h2" name="heart-outline" onmouseover="paintHearts(2);" onmouseout="cleanHearts();" onclick="fixHearts(2);"></ion-icon> 
+        <ion-icon id="h3" name="heart-outline" onmouseover="paintHearts(3);" onmouseout="cleanHearts();" onclick="fixHearts(3);"></ion-icon> 
+        <ion-icon id="h4" name="heart-outline" onmouseover="paintHearts(4);" onmouseout="cleanHearts();" onclick="fixHearts(4);"></ion-icon> 
+        <ion-icon id="h5" name="heart-outline" onmouseover="paintHearts(5);" onmouseout="cleanHearts();" onclick="fixHearts(5);"></ion-icon> 
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+    <!-- <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script> -->
+
+    <!-- CUSTOM JAVASCRIPT -->
+    <script src="js/functions_4_rating.js"></script>
+</body>
+</html>

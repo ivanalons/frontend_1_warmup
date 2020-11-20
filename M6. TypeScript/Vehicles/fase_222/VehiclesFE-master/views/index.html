@@ -1,0 +1,157 @@
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+    <script src="../models/car.js"></script>
+    <script src="../models/wheel.js"></script>
+    <script src="../controllers/controller.js"></script>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center mb-5">
+        <h1>Ejercicio Vehiculos</h1>
+    </div>
+    <form>
+
+        <div class="container" id="formCar">
+            <div class="row">
+
+                <div class="form-group col-3">
+                    <label for="plate">Plate</label>
+                    <input type="text" class="form-control" id="plate">
+                </div>
+                <div class="form-group col-3">
+                    <label for="brand">Brand</label>
+                    <input type="text" class="form-control" id="brand">
+                </div>
+                <div class="form-group col-3">
+                    <label for="color">Color</label>
+                    <input type="text" class="form-control" id="color">
+                </div>
+            </div>
+            <button type="button" class="btn btn-info" onclick="createCar();">Create car</button>
+            <p id="carInfo"></p>
+        </div>
+    </form>
+
+    <form>
+        <div class="container" id="formWheels" hidden>
+            <div class="row">
+
+                <div class="form-group col-2">
+                    <label for="wbrand1">Marca Rueda 1</label>
+                    <input type="text" class="form-control" id="wbrand1">
+                </div>
+                <div class="form-group col-2">
+                    <label for="wdiameter1">Diámetro Rueda 1</label>
+                    <input type="text" class="form-control" id="wdiameter1">
+                </div>
+                <div class="form-group col-2">
+                    <label for="wbrand2">Marca Rueda 2</label>
+                    <input type="text" class="form-control" id="wbrand2">
+                </div>
+                <div class="form-group col-2">
+                    <label for="wdiameter2">Diámetro Rueda 2</label>
+                    <input type="text" class="form-control" id="wdiameter2">
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="form-group col-2">
+                    <label for="wbrand3">Marca Rueda 3</label>
+                    <input type="text" class="form-control" id="wbrand3">
+                </div>
+                <div class="form-group col-2">
+                    <label for="wdiameter3">Diámetro Rueda 3</label>
+                    <input type="text" class="form-control" id="wdiameter3">
+                </div>
+                <div class="form-group col-2">
+                    <label for="wbrand4">Marca Rueda 4</label>
+                    <input type="text" class="form-control" id="wbrand4">
+                </div>
+                <div class="form-group col-2">
+                    <label for="wdiameter4">Diámetro Rueda 4</label>
+                    <input type="text" class="form-control" id="wdiameter4">
+                </div>
+            </div>
+            <button type="button" class="btn btn-info" onclick="createWheels();">Add Wheels</button>
+            <p id="wheelsInfo"></p>
+        </div>
+    </form>
+
+    <div class="container" id="allInfo" hidden>
+        <!-- car -->
+        <div class="row">
+            <div class="col-2">
+                <p><B>Car:</B></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <p>Plate:
+                <span id="infoplate"></span>
+                </p>
+            </div>
+            <div class="col-2">
+                <p>Brand:
+                <span id="infobrand"></span>
+                </p>
+            </div>
+            <div class="col-2">
+                <p>Color:
+                <span id="infocolor"></span>
+                </p>
+            </div>
+        </div>
+        <br>
+        <!-- wheeels -->
+        <div class="row">
+            <div class="col-2">
+                <p><B>Wheels:</B></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-2">
+                <p>Wheel 1: Brand: <span id="infob1"></span>
+                   Diameter: <span id="infod1"></span> 
+                </p>
+            </div>
+            <div class="col-2">
+                <p>Wheel 2: Brand:
+                <span id="infob2"></span>
+                Diameter: <span id="infod2"></span> 
+                </p>
+            </div>
+            <div class="col-2">
+                <p>Wheel 3: Brand:
+                <span id="infob3"></span>
+                Diameter: <span id="infod3"></span> 
+                </p>
+            </div>
+            <div class="col-2">
+                <p>Wheel 4: Brand:
+                <span id="infob4"></span>
+                Diameter: <span id="infod4"></span> 
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+</body>

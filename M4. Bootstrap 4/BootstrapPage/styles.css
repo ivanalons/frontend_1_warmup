@@ -1,0 +1,120 @@
+.bordered{
+    border-bottom: 2px solid black;
+}
+
+.headerRight{
+    /* margin : auto 100px auto auto; */
+    margin: auto;
+}
+
+.headerLeft{
+    /* margin : 25px auto auto 100px; */
+    margin:auto;
+}
+
+.headerButton{
+    margin: 0 20px;
+    padding: 5px 50px; 
+}
+
+.navbar-nav{
+    margin-left: 50px;
+
+}
+
+.navbar-nav {
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navInput{
+    margin: 10px auto;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    width:100%;
+}
+
+.imgHeight{
+    height: 85vh;
+}
+
+.imgAsideHeight{
+    height: 40vh;
+}
+
+.imgContainer{
+    position:relative;
+    text-align: center;
+    color:blue;
+    font-weight: bold;
+    padding: 15px 0;
+}
+
+.bottomRight1{
+    position:absolute;
+    bottom: 25px;
+    right: 175px;
+    background-color: white;   
+}
+
+.bottomRight2{
+    position:absolute;
+    bottom: 25px;
+    right: 10px;
+    background-color: white;   
+}
+
+.bottomRight3{
+    position:absolute;
+    bottom: 25px;
+    right: 10px;
+    background-color: white;   
+}
+
+footer{
+    height: 10vh;
+}
+
+.leftFooter{
+    margin: 30px auto 30px auto;
+}
+
+.rightFooter{
+    margin: 30px auto 30px auto;
+}
+
+.rightFooter a, .leftFooter a{
+    padding: 0 20px;
+}
+
+/*SM*/
+@media (min-width: 576px) {
+
+}
+
+ /*MD*/
+@media (min-width: 768px) { 
+
+ }
+
+ /*LG*/
+@media (min-width: 992px) { 
+    .headerLeft{
+        margin-left:50px;
+        margin-right:auto;
+    }
+    .headerRight{
+        margin-left:auto;
+        margin-right:50px;
+    } 
+ }
+
+ /*XL*/
+@media (min-width: 1200px) { 
+  
+ }
